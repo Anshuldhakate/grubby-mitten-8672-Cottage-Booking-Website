@@ -1,15 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8">,  
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>grubby-mitten-8672</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geologica:wght@500&family=Ubuntu&display=swap" rel="stylesheet">
 </head>
 <style>
     body{
+        box-sizing: border-box;
         width: 100%;
         margin:auto;
-
+     border: 30px solid black;
+     font-family: 'Geologica', sans-serif;
+     font-family: 'Ubuntu', sans-serif;
+     background-color: li;
     }
 .navbarmain{
     display: flex;
@@ -22,9 +29,10 @@
 .nav2 input{
     margin-left: 50px;
     height: 30px;
+    width: 200px;
 }
 .nav3{
-    margin-left: 150px;
+    margin-left: 90px;
 }
 .nav3 a{
     text-decoration: none;
@@ -32,7 +40,7 @@
     color: black;
 }
 .nav4{
-    margin-left: 50px;
+    margin-left: 30px;
 }
 .nav4 a{
     text-decoration: none;
@@ -58,6 +66,45 @@
     text-align: center;
     margin-top: 20px;
 }
+
+.cottages{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 90%;
+    margin: auto;
+    gap: 20px;
+    text-align: center;
+    margin-bottom: 80px;
+}
+.cottages div{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    padding: 20px;
+}
+
+.cottages img{
+width: 90%;
+height: 200px;
+margin: auto;
+border-radius: 10px;
+}
+
+.footer{
+    display: flex;
+    padding: 50px;
+    background-color: lightgrey;
+}
+.footer div a{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin-left: 300px;
+    text-decoration: none;
+    color: black;
+    margin-bottom: 10px;
+}
+
+.footer div p{
+    width: 550px;
+}
 </style>
 <body>
     <div class="navbarmain">
@@ -65,7 +112,7 @@
             <img src="https://join.ukretreats.club/_next/static/media/logo.6fe2ce6a.svg" alt="">
         </div>   
         <div class="nav2">
-            <input type="search" placeholder="search by name">
+            <input type="search" placeholder="🔍search cottages by name">
         </div>
         <div class="nav3">
             <a href="">About Us</a>
@@ -73,15 +120,156 @@
             <a href="">FAQs</a>
         </div>
         <div class="nav4">
-            <a href="">Log in</a>
+            <a href="./login.html">Log in</a>
             <a href="">Sign up</a>
             <a href="">Join UKR Club</a>
         </div>      
     </div>
 
     <div class="heading">
-        <h1>Discover unique stays in idyllic locations</h1>
-        <p>From luxury, remote cabins to family-friendly treehouses, UKR Club helps you find your next escape whilst saving you money, time and effort.</p>
+        <h1>Discover Unique Stays In Idyllic Locations</h1>
+        <p>From luxury, remote cabins to family-friendly treehouses, UKR Club helps you find your next escape whilst saving you money, time and effort.</p> 
     </div>
+
+
+    <div class="container">
+        <div class="cont1">
+         <h3>Filters</h3>
+        </div>   
+        </div>
+
+
+        
+            <div class="cottages">
+                <div class="img1">
+                    <a href=""><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKsi2gpFh8qSveuq3bp1x7EGkW26yJ5M2TPzZdSovywA3d6c_q" alt=""></a>
+                    <h3>Woldsend Cottages</h3>
+                    <p>Wakefield Council England</p>
+                    <p><strong>$84</strong>/night</p>
+                    <button class="btn1">View Details</button>
+                </div>
+                <div>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUB0A2Yabl2suJaSwVtgnkts5K0fNmtDuyO-POIkbF4vxYszcK" alt="">
+                    <h3>Cliff House Cottages</h3>
+                    <p>Wakefield Council England</p>
+                    <p><strong>$90</strong>/night</p>
+                    <button class="btn2">View Details</button>
+                </div>
+                <div>
+                    <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTbdE3wk_FULxAMQfxoj38tU8mGit6uSQGl7NkPNSqo4D68PvEp" alt="">
+                    <h3>Fox & Rabbit Cottages</h3>
+                    <p>Wakefield Council England</p>
+                    <p><strong>$84</strong>/night</p>
+                    <button class="btn3">View Details</button>
+                </div>
+                <div>
+                    <img src="https://woldsend.com/_webedit/cached-images/50-0-0-0-10000-10000-768.jpg" alt="">
+                    <h3>Rose Cottages</h3>
+                    <p>Wakefield Council England</p>
+                    <p><strong>$95</strong>/night</p>
+                    <button class="btn4">View Details</button>
+                </div>
+                <div>
+                    <img src="https://woldsend.com/_webedit/cached-images/31-0-99-461-9803-9079-393.jpg" alt="">
+                    <h3>Granary Cottages</h3>
+                    <p>Wakefield Council England</p>
+                    <p><strong>$84</strong>/night</p>
+                    <button class="btn5">View Details</button>
+                </div>
+                <div>
+                    <img src="https://holidaycottagesinwhitby.co.uk/perch/resources/img2112-w200.jpg" alt="">
+                    <h3>Storm Cottages</h3>
+                    <p>Wakefield Council England</p>
+                    <p><strong>$95</strong>/night</p>
+                    <button class="btn6">View Details</button>
+                </div>
+                <div>
+                    <img src="https://holidaycottagesinwhitby.co.uk/perch/resources/large-247-w1920.jpg" alt="">
+                    <h3>Lobster Pot Cottages</h3>
+                    <p>Wakefield Council England</p>
+                    <p><strong>$105</strong>/night</p>
+                    <button class="btn7">View Details</button>
+                </div>
+                <div>
+                    <img src="https://holidaycottagesinwhitby.co.uk/perch/resources/large-374-w1920.jpg" alt="">
+                    <h3>Crystal Cottages</h3>
+                    <p>Wakefield Council England</p>
+                    <p><strong>$100</strong>/night</p>
+                    <button class="btn8">View Details</button>
+                </div>
+                <div>
+                    <img src="https://holidaycottagesinwhitby.co.uk/perch/resources/pent-living-room-w1920.jpg" alt="">
+                    <h3>The Penthouse</h3>
+                    <p>Wakefield Council England</p>
+                    <p><strong>$110</strong>/night</p>
+                    <button class="btn9">View Details</button>
+                </div>
+                <div>
+                    <img src="https://holidaycottagesinwhitby.co.uk/perch/resources/house1-w1920.jpg" alt="">
+                    <h3>Well Springs Cottages</h3>
+                    <p>Wakefield Council England</p>
+                    <p><strong>$115</strong>/night</p>
+                    <button class="btn10">View Details</button>
+                </div>
+                <div>
+                    <img src="https://holidaycottagesinwhitby.co.uk/perch/resources/2798906483187349202295364910118503864969743n-w1920.jpg" alt="">
+                    <h3>Honeycomb Cottages</h3>
+                    <p>Wakefield Council England</p>
+                    <p><strong>$105</strong>/night</p>
+                    <button class="btn11">View Details</button>
+                </div>
+                <div>
+                    <img src="https://holidaycottagesinwhitby.co.uk/perch/resources/clam05.jpg" alt="">
+                    <h3>Clamshell Cottages</h3>
+                    <p>Wakefield Council England</p>
+                    <p><strong>$100</strong>/night</p>
+                    <button class="btn12">View Details</button>
+                </div>
+        </div>
+        <hr>
+
+        <div class="footer">
+            <div>
+                <img src="https://join.ukretreats.club/_next/static/media/logo.6fe2ce6a.svg" alt="">
+                <p>|  UKR's Mobile: 07957 729151  |  Email: ukrclub@gmail.com  |  Privacy Policy </p>
+                <p>©2023 UK Retreats Ltd (Company no.13 822 175). All rights reserved. We use cookies and similar technologies to help personalise content, tailor and measure ads, and provide a better experience. If you’re happy with this, please continue to use our website normally. If you’d like to change your cookie settings, read our Cookies Policy for more information.</p>
+
+            </div>
+            <div>
+                <a href="">About Us</a>
+                <a href="">Privacy Policy</a>
+                <a href="">Cookies Policy</a>
+                <a href="">Terms of Service</a>
+            </div>
+            
+        </div>
 </body>
+
+<script>
+
+const cottages = document.querySelectorAll(".cottages div");
+    const searchInput = document.querySelector("input[type='search']");
+
+    searchInput.addEventListener("input", function() {
+        const searchTerm = searchInput.value.toLowerCase();
+        cottages.forEach(function(cottage) {
+            const name = cottage.querySelector("h3").innerText.toLowerCase();
+            const location = cottage.querySelector("p:nth-of-type(1)").innerText.toLowerCase();
+            if (name.includes(searchTerm) || location.includes(searchTerm)) {
+                cottage.style.display = "block";
+            } else {
+                cottage.style.display = "none";
+            }
+        });
+    });
+
+
+
+
+    let image1= document.querySelector(".btn1");
+    image1.addEventListener("click", function(){
+       window.location.href = 'newpage.html';
+        
+    })
+</script>
 </html>
