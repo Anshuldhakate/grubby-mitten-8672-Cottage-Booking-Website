@@ -5,7 +5,187 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+<style>
+    body{
+        box-sizing: border-box;
+        width: 100%;
+        margin:auto;
+     border: 30px solid black;
+     font-family: 'Geologica', sans-serif;
+     font-family: 'Ubuntu', sans-serif;
+     background-color: li;
+    }
+.navbarmain{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 10px;
+}
+
+.nav2 input{
+    margin-left: 50px;
+    height: 30px;
+    width: 200px;
+}
+.nav3{
+    margin-left: 400px;
+}
+.nav3 a{
+    text-decoration: none;
+    margin: 10px;
+    color: black;
+}
+.nav4{
+    margin-left: 30px;
+}
+.nav4 a{
+    text-decoration: none;
+    margin: 10px;
+    color: white;
+    background-color: black;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  /* margin: auto; */
+  margin: 40px;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.data{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 30px;
+  gap: 10px;
+}
+.data div img{
+  width: 90%;
+  margin: auto;
+}
+
+
+</style>
 <body>
-    <h1>this is new page</h1>
+    <div class="navbarmain">
+        <div class="nav1">
+            <img src="https://join.ukretreats.club/_next/static/media/logo.6fe2ce6a.svg" alt="">
+        </div>   
+        <div class="nav3">
+            <a href="./homePage.html">About Us</a>
+            <a href="./theperks.html">The Perks</a>
+            <a href="">FAQs</a>
+        </div>
+        <div class="nav4">
+            <a href="">Join UKR Club</a>
+        </div>      
+    </div>
+
+     <h1>WOLDSEND HOLIDAY COTTAGES </h1>
+     <p>Beautifully Located Between the North York Moors & Yorkshire Wolds </p>
+     <div class="slideshow-container">
+
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">  
+          <img src="https://www.woldsend.com/_webedit/cached-images/16-0-0-2354-10000-5375-1920.jpg" style="width:100%"> 
+        </div>
+      
+        <div class="mySlides fade">
+          <img src="https://www.woldsend.com/_webedit/cached-images/14-0-0-899-10000-7167-1632.jpg" style="width:100%">
+        </div>
+      
+        <div class="mySlides fade">    
+          <img src="https://www.woldsend.com/_webedit/cached-images/12-0-0-1366-10000-6047-1920.jpg" style="width:100%">
+        </div>
+        <div class="mySlides fade">    
+          <img src="https://www.woldsend.com/_webedit/cached-images/57-0-1115-878-7792-5587-998.jpg" style="width:100%">
+        </div>
+
+      
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      <br>
+
+      <div class="data">
+        <div>
+          <img src="https://www.woldsend.com/_webedit/cached-images/49-0-0-494-10000-8889-640.jpg" alt="">
+          <p>Finished to a very high standard, Granary & Rose Cottages retain many of the original features of the original 18th Century Barn. Original roof trusses, a brick dovecote and original pantiles, all helping to highlight the character of this wonderful homely building. The cottages were renovated and finished in 2010. Since then we have had many satisfied people stay with us. </p>
+        </div>
+        <div>
+          <img src="https://www.woldsend.com/_webedit/cached-images/18-0-0-0-10000-10000-512.jpg" alt="">
+          <p>We are in Rillington, which is a small, unspoilt village just 5 miles from Malton and 20 miles from York in a quiet valley lying between the North Yorkshire Moors and the undiscovered rolling hills of the Yorkshire Wolds. The village comprises of country cottages and working farms, there is a Post Office and General Store, Fish & Chip Shop, our Local Butcher, a church, The Coach & Horses and The Fleece public houses are all within a 5 minute walk from the cottages. </p>
+        </div>
+        <div>
+          <img src="https://www.woldsend.com/_webedit/cached-images/19-0-0-0-10000-10000-512.jpg" alt="">
+          <p>The cottages were converted by award winning Kent Building Developments Ltd and have a number of energy saving features built in. They are heated by a high percentage of renewable energy, air source heat pumps provide all the energy necessary to run the highly efficient underfloor heating system and all of the heat required for the hot water system. </p>
+        </div>
+      </div>
+
 </body>
+<script>
+    let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+</script>
 </html>

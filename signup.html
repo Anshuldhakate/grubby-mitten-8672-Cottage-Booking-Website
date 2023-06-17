@@ -61,7 +61,8 @@
 margin: 100px;
 border: 3px solid white;
 text-align: center;
-height: 250px;
+height: 400px;
+margin-top: 20px;
 
 }
 .container{
@@ -74,7 +75,7 @@ height: 250px;
 }
 
 .container input{
-    margin: 10px;
+    margin: 5px;
     width: 300px;
     height: 30px;
     border-radius: 8px;
@@ -86,13 +87,30 @@ height: 250px;
     background-color: rgb(22, 23, 25);
     border: 2px solid black;
     color: white;
-    margin-top: 25px;
+    margin-top: 15px;
 }
 .container button:hover{
     color: black;
     background-color: lightblue;
 }
-
+.container p{
+    color: white;
+    margin: 10px;
+    font-size: 15px;
+}
+.container a{
+    text-decoration: none;
+    margin: 10px;
+    color: white;
+    background-color: black;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 15px;
+}
+.container a:hover{
+    color: black;
+    background-color: lightblue;
+}
 .footer{
     display: flex;
     padding: 50px;
@@ -131,12 +149,19 @@ height: 250px;
 
     <div class="main">
         <div class="container">
-            <h2>Log In to Your Account</h2>
-            <input type="text" placeholder="Enter EmailId"><br>
+            <h2>Create Your Account</h2>
+            <input type="text" placeholder="Enter First Name"><br>
+            <input type="text" placeholder="Enter Last Name"><br>
+            <input type="email" placeholder="Enter EmailId"><br>
             <input type="text" placeholder="Enter Password"><br>
             <button>Sign Up</button>
+
+            <p>Already have account?</p>
+            <p>click here</p>
+            <a href="./login.html">Log in</a>
         </div>
     </div>
+    
     <div class="footer">
         <div>
             <img src="https://join.ukretreats.club/_next/static/media/logo.6fe2ce6a.svg" alt="">
@@ -153,7 +178,6 @@ height: 250px;
         
     </div>
 
-
 </body>
 
     
@@ -161,24 +185,29 @@ height: 250px;
     <script>
     let button = document.querySelector("button");
 
-    button.addEventListener("click", function(){
-        
-        let email = document.querySelector('input[type="text"][placeholder="Enter EmailId"]').value;
-        let password = document.querySelector('input[type="text"][placeholder="Enter Password"]').value;
-        
-        
-        let user = {
-            email: email,
-            password: password
-        };
+button.addEventListener("click", function(){
+    
+    let firstName = document.querySelector('input[type="text"][placeholder="Enter First Name"]').value;
+    let lastName = document.querySelector('input[type="text"][placeholder="Enter Last Name"]').value;
+    let email = document.querySelector('input[type="email"][placeholder="Enter EmailId"]').value;
+    let password = document.querySelector('input[type="text"][placeholder="Enter Password"]').value;
+    
+    
+    let user = {
+        firstName: firstName,
+        lastName: lastName,
+        email: email,
+        password: password
+    };
+    
+   alert("Your Account Created Susscessfully");
 
-        alert("log In successful")
-        window.location.href = 'homePage.html'
-        
-        let userJSON = JSON.stringify(user);
-        
-        localStorage.setItem("userData", userJSON);
-    })
+ window.location.href = 'homePage.html'
+
+    
+    localStorage.setItem("userData", JSON.stringify(user));
+})
+    
 </script>
 
 </html>
