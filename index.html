@@ -9,6 +9,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@500&family=Ubuntu&display=swap" rel="stylesheet">
 </head>
 <style>
+
     body{
         box-sizing: border-box;
         width: 100%;
@@ -75,6 +76,7 @@
     gap: 20px;
     text-align: center;
     margin-bottom: 80px;
+    background-color: lightcyan;
 }
 .cottages div{
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
@@ -92,6 +94,7 @@ border-radius: 10px;
     display: flex;
     padding: 50px;
     background-color: lightgrey;
+    margin-top: 30px;
 }
 .footer div a{
     display: grid;
@@ -105,6 +108,93 @@ border-radius: 10px;
 .footer div p{
     width: 550px;
 }
+h1{
+    text-align: center;
+}
+.farm{
+    display: flex;
+    background-color: lightgray;
+    width: 90%;
+    margin: auto;
+    margin-top: 10px;
+}
+.farm div{
+    margin: 20px;
+    margin-top: 10px;
+}
+.farm div img{
+   width:600px;
+   margin: auto;
+   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.farm div p{
+    text-align: justify;
+    width: 400px;
+}
+
+.farm div a{
+    text-decoration: none;
+    color: black;
+    background-color: rgb(190, 220, 220);
+}
+
+
+.farm1{
+    display: flex;
+    background-color: lightslategray;
+    width: 90%;
+    margin: auto;
+    color: white;
+    margin-top: 10px;
+}
+.farm1 div{
+    margin: 20px;
+    margin-top: 10px;
+}
+.farm1 div img{
+   width:600px;
+   margin: auto;
+   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.farm1 div p{
+    text-align: justify;
+    width: 400px;
+}
+
+.farm1 div a{
+    text-decoration: none;
+    color: black;
+    background-color: rgb(190, 220, 220);
+}
+
+@media only screen and (min-width:500px) and (max-width: 1000px) {
+        /* Medium Screen  */
+       .nav3 input{
+        display: none;
+       }
+
+
+      }
+
+      @media only screen and (max-width: 600px) {
+        /* Small Screen  */
+        .nav div{
+        display: none;
+       }
+       .top>div{
+          grid-template-columns: repeat(1, 1fr);
+        }
+        .mid>div{
+          grid-template-columns: repeat(1, 1fr);
+        }
+        .bottom{
+          flex-direction: column;
+        }
+   
+      }
+
+
+
 </style>
 <body>
     <div class="navbarmain">
@@ -115,7 +205,7 @@ border-radius: 10px;
             <input type="search" placeholder="🔍search cottages by name">
         </div>
         <div class="nav3">
-            <a href="./homePage.html">About Us</a>
+            <a href="./index.html">About Us</a>
             <a href="./theperks.html">The Perks</a>
             <a href="">FAQs</a>
         </div>
@@ -132,11 +222,7 @@ border-radius: 10px;
     </div>
 
 
-    <div class="container">
-        <div class="cont1">
-         <h3>Filters</h3>
-        </div>   
-        </div>
+    
 
 
         
@@ -162,7 +248,10 @@ border-radius: 10px;
                     <p><strong>$84</strong>/night</p>
                     <button class="btn3">View Details</button>
                 </div>
-                <div>
+
+
+                
+                <!-- <div>
                     <img src="https://woldsend.com/_webedit/cached-images/50-0-0-0-10000-10000-768.jpg" alt="">
                     <h3>Rose Cottages</h3>
                     <p>Wakefield Council England</p>
@@ -224,8 +313,124 @@ border-radius: 10px;
                     <p>Wakefield Council England</p>
                     <p><strong>$100</strong>/night</p>
                     <button class="btn12">View Details</button>
-                </div>
+                </div> -->
         </div>
+        <h1>See Some More Cottages</h1>
+
+        <div class="farm">
+            <div>
+                <img src="https://static.wixstatic.com/media/822616_e2afbeee617e419488946ed6cf853854~mv2_d_5184_3456_s_4_2.jpg/v1/fill/w_849,h_477,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/822616_e2afbeee617e419488946ed6cf853854~mv2_d_5184_3456_s_4_2.jpg" alt="">
+            </div>
+            <div>
+                <h3>The Farmhouse</h3>
+                <p>Sleeps 10 (plus one child/two infants)</p>
+                <p> From £1,600 per week (short stays available at all times exc English school summer holidays)</p>
+                ​<p>5 bedrooms (3 x double, 2 x twin), 4 bathrooms, 2 lounges,  kitchen-diner</p>
+                    <a href="">Read More---></a>
+            </div>       
+        </div>
+
+
+        <div class="farm1">
+            
+            <div>
+                <h3>Shepherd's Lodge</h3>
+                <p>Sleeps 10 (plus one child/infant)</p>
+                <p> From £1,600 per week (short stays available at all times exc English school summer holidays)</p>
+                ​<p>5 bedrooms (3 x double, 2 x twin), 2 bathrooms, 2 additional WCs, 2 lounges,  kitchen-diner, private garden and conservatory</p>
+                    <a href="">Read More---></a>
+            </div>     
+            
+            <div>
+                <img src="https://static.wixstatic.com/media/822616_5411ac763f60476986410af1e0faefae~mv2_d_4897_3265_s_4_2.jpg/v1/fill/w_851,h_477,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/822616_5411ac763f60476986410af1e0faefae~mv2_d_4897_3265_s_4_2.jpg" alt="">
+            </div>
+        </div>
+
+        <div class="farm">
+            <div>
+                <img src="https://static.wixstatic.com/media/822616_e2afbeee617e419488946ed6cf853854~mv2_d_5184_3456_s_4_2.jpg/v1/fill/w_849,h_477,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/822616_e2afbeee617e419488946ed6cf853854~mv2_d_5184_3456_s_4_2.jpg" alt="">
+            </div>
+            <div>
+                <h3>Bracken Brow</h3>
+                <p>Sleeps 6 (plus one infant)</p>
+                <p> From £900 per week (short stays available at all times exc English school summer holidays)</p>
+                ​<p>3 bedrooms (2 x double, 1 x twin), 2 bathrooms, lounge,  kitchen-diner, additional WC</p>
+                    <a href="">Read More---></a>
+            </div>       
+        </div>
+
+        <div class="farm1">
+        <div>
+            <h3>Columbine</h3>
+            <p>Sleeps 6 (plus one child/infant)</p>
+            <p> From £1,600 per week (short stays available at all times exc English school summer holidays)</p>
+            ​<p>5 bedrooms (3 x double, 2 x twin), 2 bathrooms, 2 additional WCs, 2 lounges,  kitchen-diner, private garden and conservatory</p>
+                <a href="">Read More---></a>
+        </div>     
+        
+        <div>
+            <img src="https://static.wixstatic.com/media/822616_7a54499f437943e4ac764441b81acfdd~mv2_d_5184_3456_s_4_2.jpg/v1/fill/w_851,h_477,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/822616_7a54499f437943e4ac764441b81acfdd~mv2_d_5184_3456_s_4_2.jpg" alt="">
+        </div>
+    </div>
+
+
+
+    <div class="farm">
+        <div>
+            <img src="https://static.wixstatic.com/media/822616_0922458cb9ec4da4b9c7123d7be9ff14~mv2_d_5012_3346_s_4_2.jpg/v1/fill/w_849,h_477,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/822616_0922458cb9ec4da4b9c7123d7be9ff14~mv2_d_5012_3346_s_4_2.jpg  " alt="">
+        </div>
+        <div>
+            <h3>Tanglewood</h3>
+            <p>Sleeps 4 (plus one child/infant)</p>
+            <p> From £700 per week (short stays available at all times exc English school summer holidays)</p>
+            ​<p>5 bedrooms (3 x double, 2 x twin), 4 bathrooms, 2 lounges,  kitchen-diner</p>
+                <a href="">Read More---></a>
+        </div>       
+    </div>
+
+
+    <div class="farm1">
+        <div>
+            <h3>Beech Royd</h3>
+            <p>Sleeps 4 (plus one child/infant)</p>
+            <p> From £700 per week (short stays available at all times exc English school summer holidays)</p>
+            ​<p>2 bedrooms (1 x double, 1 x twin), family bathroom, lounge,  kitchen-diner</p>
+                <a href="">Read More---></a>
+        </div>     
+        
+        <div>
+            <img src="https://static.wixstatic.com/media/822616_f4e7019677b64c3183f5a6cdde65aa7c~mv2.jpg/v1/fill/w_963,h_642,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/822616_f4e7019677b64c3183f5a6cdde65aa7c~mv2.jpg" alt="">
+        </div>
+    </div>
+
+
+    <div class="farm">
+        <div>
+            <img src="https://static.wixstatic.com/media/822616_068d0674be704c6aa282392e33378cdb~mv2.jpg/v1/fill/w_849,h_477,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/822616_068d0674be704c6aa282392e33378cdb~mv2.jpg" alt="">
+        </div>
+        <div>
+            <h3>Dove Tree</h3>
+            <p>Sleeps 3</p>
+            <p> From £520 per week (short stays available at all times exc English school summer holidays)</p>
+            ​<p>2 bedrooms (1 x double, 1 x single), bathroom, lounge,  kitchen-diner</p>
+                <a href="">Read More---></a>
+        </div>       
+    </div>
+
+
+    <div class="farm1">
+        <div>
+            <h3>Fat Hen</h3>
+            <p>Sleeps 2 (plus one infant)</p>
+            <p> From £410 per week (short stays available at all times exc English school summer holidays)</p>
+            ​<p>1 bedrooms (double), bathroom, lounge,  kitchen-diner</p>
+                <a href="">Read More---></a>
+        </div>     
+        
+        <div>
+            <img src="https://static.wixstatic.com/media/822616_f4e7019677b64c3183f5a6cdde65aa7c~mv2.jpg/v1/fill/w_963,h_642,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/822616_f4e7019677b64c3183f5a6cdde65aa7c~mv2.jpg" alt="">
+        </div>
+    </div>
         <hr>
 
         <div class="footer">
