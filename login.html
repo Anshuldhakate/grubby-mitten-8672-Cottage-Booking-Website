@@ -132,8 +132,8 @@ height: 250px;
     <div class="main">
         <div class="container">
             <h2>Log In to Your Account</h2>
-            <input type="text" placeholder="Enter EmailId"><br>
-            <input type="text" placeholder="Enter Password"><br>
+            <input type="email" placeholder="Enter EmailId"><br>
+            <input type="password" placeholder="Enter Password"><br>
             <button>Sign Up</button>
         </div>
     </div>
@@ -159,26 +159,33 @@ height: 250px;
     
 
     <script>
-    let button = document.querySelector("button");
+   
 
-    button.addEventListener("click", function(){
-        
-        let email = document.querySelector('input[type="text"][placeholder="Enter EmailId"]').value;
-        let password = document.querySelector('input[type="text"][placeholder="Enter Password"]').value;
-        
-        
-        let user = {
-            email: email,
-            password: password
-        };
 
-        alert("log In successful")
-        window.location.href = 'index.html'
-        
-        let userJSON = JSON.stringify(user);
-        
-        localStorage.setItem("userData", userJSON);
-    })
+
+
+function login() {
+  var email = document.querySelector('input[type="email"]').value;
+  var password = document.querySelector('input[type="password"]').value;
+
+  var storedUser = localStorage.getItem("userData");
+  var user = JSON.parse(storedUser);
+
+
+ 
+
+  if (email === user.email && password === user.password) {
+    console.log("hi")
+    alert("Login Successful");
+    // Redirect to the index.html page or any other desired page
+    window.location.href = "index.html";
+  } else {
+    alert("Invalid email or password");
+  }
+}
+
+ var signUpButton = document.querySelector('button');
+signUpButton.addEventListener('click', login);
 </script>
 
 </html>
